@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Registration Form</title>
+</head>
+<body>
+  <div class="login-wrapper">
+    <form action="" class="form">
+      <img src="img/avatar.png" alt="">
+      <h2>Register</h2>
+      <div class="input-group">
+        <input type="text" name="loginUser" id="loginUser" required>
+        <label for="loginUser">User Name</label>
+      </div>
+      <div class="input-group">
+        <input type="email" name="email" id="email" required>
+        <label for="email">email</label>
+      </div>
+      <div class="input-group">
+        <input type="text" name="Registration Number" id="Registration Number" required>
+        <label for="Registration Number">Registration Number</label>
+      </div>
+      <div class="input-group">
+        <input type="text" name="" list="Clubs" placeholder="Club">
+        <datalist id="Clubs">
+         
+        <option>Debug club</option>
+        <option>Aptinues club</option>
+        <option>Sports club</option>
+    </datalist>
+      </div>
+      <div class="input-group">
+       <p>D.O.B <input type="date" name="date" id="date" required></p>
+      </div>
+      <div class="input-group">
+       <p>Male <input type="radio" name="gender" id="Male" required></p>
+       <p>Female <input type="radio" name="gender" id="Male" required></p> 
+      </div>
+      <b><input type="submit" value="Register" class="submit-btn"></b>
+      <a href="#forgot-pw" class="forgot-pw">Already Registered?</a>
+    </form>
+
+    <div id="forgot-pw">
+      <form action="" class="form">
+        <a href="#" class="close">&times;</a>
+        <h2>Reset Password</h2>
+        <div class="input-group">
+          <input type="email" name="email" id="email" required>
+          <label for="email">Email</label>
+        </div>
+        <input type="submit" value="Submit" class="submit-btn">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
